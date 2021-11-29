@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>How To Make Website WIth Image Mask & Blur Effect</title>
+    <title>How To Make Website With Image Mask & Blur Effect</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +18,21 @@
             <li><a href="">CONTACT US</a></li>
             </ul>
         </nav>
+        <div class="text-box">
+            <h1>How To Make a Website</h1>
+            <button type="button">Explore More</button>
+        </div>
     </div>
-</body>
 
+
+    <script>
+        var blurArea = document.getElementById("blur-area");
+   
+        document.onmousemove = function(e){
+            blurArea.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;
+        }
+   
+   </script>
+
+</body>
  </html>
